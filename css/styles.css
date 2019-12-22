@@ -1,0 +1,146 @@
+html, body {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.landing-header {
+	z-index: 1;
+	position: relative;
+	text-align: center;
+  padding-top: 30vh;
+  padding-bottom: 60vh;
+}
+
+.landing-header h1 {
+  color: #fff;
+  font-family: 'Sacramento', cursive;
+  font-size: 500%;
+  text-shadow: 2px 2px 5px black
+}
+
+.landing-header h2 {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 200%;
+  text-shadow: 2px 2px 5px black
+}
+
+.custom-hr {
+  width: 40%;
+  border-top: 2px solid white;
+  box-shadow: 2px 2px 5px black;
+}
+
+.slideshow { 
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	list-style: none;
+	margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.slideshow li { 
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 0;
+	animation: imageAnimation 60s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(../images/photo-01.jfif) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(../images/photo-02.jfif);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(../images/photo-03.jfif);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(../images/photo-04.jfif);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(../images/photo-05.jfif);
+  animation-delay: 40s; 
+}
+.slideshow li:nth-child(6) { 
+  background-image: url(../images/photo-06.jfif);
+  animation-delay: 50s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  8.33% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  16.67% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+/* Contact Section */
+
+#contact {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  background-color: #ffbbee;
+  margin: 0;
+  padding: 0;
+}
+
+#contact h2 {
+  font-family: 'Sacramento', cursive;
+  font-size: 4rem;
+  padding-top: 12vh;
+}
+
+.send-btn {
+  background-color: #fd31ca;
+  border-color: #b40c8a;
+  margin: 20px;
+}
+
+.send-btn:hover {
+  background-color: #b40c8a;
+}
+
+.btn-custom {
+  color: #fd31ca;
+  font-size: 30px;
+  margin: 50px;
+}
+
+.btn-custom:hover {
+  color: #b40c8a;
+}
+
+
+/* Older browser support - class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
