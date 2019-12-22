@@ -122,7 +122,6 @@ html, body {
 .send-btn {
   background-color: #fd31ca;
   border-color: #b40c8a;
-  margin: 20px;
 }
 
 .send-btn:hover {
@@ -143,4 +142,14 @@ html, body {
 /* Older browser support - class added by modernizr */
 .no-cssanimations .slideshow li {
 	opacity: 1;
+}
+
+@media (max-width: 767px) {
+  body, #contact, .landing-header, .form-group {
+    font-size: 2.5rem;
+  }
+
+  .btn-custom {
+    font-size: 60px;
+  }
 }
