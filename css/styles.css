@@ -144,7 +144,7 @@ html, body {
 	opacity: 1;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   body, #contact, .landing-header, .form-group {
     font-size: 2.5rem;
   }
@@ -152,4 +152,4 @@ html, body {
   .btn-custom {
     font-size: 60px;
   }
-}
+} */
